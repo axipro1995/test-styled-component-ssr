@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"noImplicitAny": true,
+		"module": "es2020",
+		"target": "es6",
+		"jsx": "react",
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "Node",
+		"strict": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"lib": ["es6", "dom"],
+		"typeRoots": [
+			"node_modules/@types",
+			"src/local-types"
+		],
+		"paths": {
+			"react-select": ["./src/local-types/react-select"],
+			"react-swipeable-views": ["./src/local-types/react-swipeable-views"],
+			"serialize-javascript": ["./src/local-types/serialize-javascript"]
+		}
+	},
+	"exclude": [
+	   "node_modules",
+	   "src/local-types/**",
+	   "dist_ssr/**"
+	]
+}
